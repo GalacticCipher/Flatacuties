@@ -5,3 +5,8 @@ const characterData = () => {
 }
 
 characters.innerHTML = '';
+//fetch the animal characters information from server
+fetch('http://localhost:3000/characters')
+.then((response) => {
+    return response.json
+})
